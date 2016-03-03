@@ -1,0 +1,43 @@
+<div class = "smallcover" style= "background-image: url(img/covers/home.jpg)">
+
+<div class = "title">RSVP</div>
+
+</div>
+
+
+<div class = "container">
+
+<div class = "row">
+
+<div class = "col-md-4">
+<h2>Coming up:</h2>
+	<img style = "width:100%" src = "http://40.media.tumblr.com/26192db617472aef7ff098b43f012757/tumblr_inline_ny8744q4w61qj7ql5_500.jpg">
+	<h3>{{coming.name.text}}<h3>
+	<h5><a href ="{{coming.url}}">RSVP</a><h5>
+	<br>
+
+</div>
+<div class = "col-md-8" id ="location">
+<h3> Located At: </h3>
+<div id = "map"></div>
+</div>
+</div>
+<div class = "row">
+<h2>2015 Season: </h2>
+
+
+<div id = "event">
+{{#each events}}
+	<h5> <a href ="{{this.url}}"> {{this.name.text}}</a></h5>
+	{{/each}}
+
+</div>
+
+</div>
+
+</div>
+
+<script src = "js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl_p_FlQCLhLo94MJAAU6hqUEwexpPGPs	
+&callback=initMap"
+        async defer></script>

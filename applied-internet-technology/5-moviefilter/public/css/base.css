@@ -1,0 +1,17 @@
+body{
+	text-align:center;
+	font-family: sans-serif;
+}
+
+h1 {
+
+	text-align:center;
+}
+
+
+thead{
+	background-color:grey;
+}
+td{
+	padding:20px;
+}

@@ -1,0 +1,10 @@
+<div id = "container"><h1>Shoppy Shopperson</h1>
+<h2>Grocery Lists</h2>
+<ul>
+	{{#each list}}
+	<li><a href="/list/{{this.slug}}"> {{this.name}}</a></li>
+	{{/each}}
+</ul>
+<a href="/list">All Lists</a> |
+<a href="/list/create">Create a New List</a>
+</div>

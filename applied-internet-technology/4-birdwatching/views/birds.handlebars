@@ -1,0 +1,19 @@
+<h3>Sightings</h3>
+<img src = "./img/bird2.png">
+<ul>
+{{#each name}}
+<li> 
+	<font color = "yellow"'>
+		{{this.number}}
+	</font>
+	x {{this.name}}
+</li>
+{{/each}}
+
+</ul>
+<form method="POST" action="">
+	<input name="name" type="text">
+	<div><input name = "add" type="submit" value = "{{add}}"></div>
+</form>
+
+<a href = "{{settingUrl}}"> Settings </a>

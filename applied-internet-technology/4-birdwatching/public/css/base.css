@@ -1,0 +1,61 @@
+body{
+	background-color: #1989D4;
+	text-align:center;
+	font-family: sans-serif;
+	color: #FFF;
+	font-size:1.5em;
+}
+
+h1 {
+	text-align:center;
+	color: #47DE6D;
+}
+h3{
+	font-style: italic;
+	font-size:20px;
+
+}
+
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #363636;
+}
+
+/* mouse over link */
+a:hover {
+    color: #77BBD1;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+ul li {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+} 
+
+
+input{
+	margin:20px 20px;
+	padding:10px 10px 10px 10px;
+}
+
+input[type=submit]:hover{
+	background: #77BBD1;
+	color:#FFF;
+}
+input[type=submit] {
+	margin:20px 20px;
+	padding:15px 15px; 
+	background:#47DE6D; 
+	border:0 none;
+	font-size:20px;
+}

@@ -1,0 +1,43 @@
+<div id = "container">
+
+<h1>Shoppy Shopperson</h1>
+<h2> {{listName}}</h2>
+
+{{#if groceryItems}}
+	<form method="POST" action="/item/check">
+		{{#each groceryItems}}
+			<ul type="none">
+
+				{{#unless checked}}
+				<li>
+					<input type="checkbox" name="check" value="{{name}}">
+					{{quantity}}  x  {{name}}
+				</li>
+				{{/unless}}
+
+				{{#if checked}}
+					<li><del>{{quantity}}  x  {{name}}</del></li>
+				{{/if}}
+
+			</ul>
+		{{/each}}
+
+		<input type="hidden" name="slug" value={{slug}}>
+		<input type="submit" value="Check Off Item">
+		<br></br>
+	</form>
+
+{{/if}}
+
+	<form method="POST" action="/item/create">
+		<input type="number" name="quantity" class="quantity" placeholder = "qty"> x <input type="text" name="name" placeholder = "item">
+		<input type="hidden" name="slug" value="{{slug}}">
+		<input type="submit" value="Add to List">
+		<br></br>
+	</form>
+
+
+<a href="/">All Lists</a> |
+<a href="/list/create">Create a New List</a>
+
+</div>

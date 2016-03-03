@@ -1,0 +1,48 @@
+curl -i localhost:3000/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Tue, 06 Oct 2015 15:23:54 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/about
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Tue, 06 Oct 2015 15:24:26 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/ABOUT
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Tue, 06 Oct 2015 15:24:54 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/about/
+HTTP/1.1 200 OK
+Content-Type: text/html
+Date: Tue, 06 Oct 2015 15:25:23 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/me
+HTTP/1.1 301 Moved Permanently
+Location: /about
+Date: Tue, 06 Oct 2015 15:26:04 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/css/base.css
+HTTP/1.1 200 OK
+Content-Type: text/css
+Date: Tue, 06 Oct 2015 15:26:25 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+curl -i localhost:3000/img/image1.png
+HTTP/1.1 200 OK
+Content-Type: image/png
+Date: Tue, 06 Oct 2015 15:26:58 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked

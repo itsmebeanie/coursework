@@ -1,0 +1,40 @@
+<div class = "smallcover" style= "background-image: url(img/covers/sponsors.jpg)">
+
+<div class = "title">Submit a Hack!</div>
+
+</div>
+
+<div class = "container" style = "text-align:center">
+
+	<div class = "form">
+		<div class = "content">
+			<h1> Submit Your Hack</h1>
+		<form method = "POST" action = "">
+
+        <div class = "description"> Name: </div> <input type = "text" name = "name">
+		<div class = "description"> Description: </div> <input type = "text" name = "description">
+		<div class = "description"> URL: </div> <input type = "text" name = "address">
+		<br><br>
+		<br><input type = "submit" value = "Submit Your Hack" id = "submission">
+
+		</form>
+	</div>
+</div>
+
+<h3> Explore Submitted Hacks </h3>
+	<div class = "row">
+
+{{#each hack}}
+	<div class = "col-md-2">
+	<a href = "{{this.url}}"><h5>{{this.name}}</h5></a>{{this.url}}, {{this.description}} <br>
+	</div>
+{{/each}}
+
+</div>
+<h3>Look up a repository for inspiration!</h3>
+<label>GitHub Username</label>
+<input type="text" id="testing">
+<ul style = "list-style-type: none;"></ul>
+<input type="button" id="lookUp" name="lookUp" value="Submit">
+
+<script src="js/github.js"></script>

@@ -1,0 +1,23 @@
+<h1>Let's Watch Some Movies!</h1>
+	<form method="GET">
+		Director: <input type="text" name="director">
+		<input type="submit" value="Filter">
+	</form>
+<br>
+<br>
+<center>
+<table border = "1">
+<thead>
+	<td>Title</td>
+	<td>Year</td>
+	<td>Director</td>
+</thead>
+{{#each movie}}
+	<tr>
+	<td>{{title}}</td>
+	<td>{{year}}</td>
+	<td>{{director}}</td>
+	</tr>
+{{/each}}
+</table>
+</center>
