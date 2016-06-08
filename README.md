@@ -1,9 +1,12 @@
-#Coursework for NYU
+#Coursework for NYU's Computer Science Major
 
-####List of courses
+- Introduction to Computer Science
+- Data Structures
+- Basic Algorithms
 - Computer Systems Organization
 - Operating Systems
-- Data Structures
-- Applied Internet Technology
+- Applied Internet Technology (Full-Stack)
 - Algorithmic Problem Solving
 - Parallel Computing
+- Linear Algebra
+- Programming Languages (Graduate)
